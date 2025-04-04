@@ -38,6 +38,11 @@ export function SignUpForm({ className, ...props }: React.ComponentPropsWithoutR
         password,
         options: {
           emailRedirectTo: `${window.location.origin}/dashboard`,
+          data: {
+            site_name: "Neothinkers",
+            site_url: window.location.origin,
+            platform: "neothinkers"
+          }
         },
       })
       if (error) throw error
